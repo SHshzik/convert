@@ -1,7 +1,7 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 
 function App() {
   return (
