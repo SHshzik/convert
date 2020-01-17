@@ -1,7 +1,8 @@
 import React from 'react';
+import Container from "react-bootstrap/Container";
+import {Link} from "react-router-dom";
 
 import './Header.css';
-import Container from "react-bootstrap/Container";
 
 export default class Header extends React.Component {
   render() {
@@ -9,10 +10,10 @@ export default class Header extends React.Component {
       <Container className="header">
         <ul className="header-list">
           <li className="header-list__item">
-            <a href="/" className="header-list__link">Конвертер</a>
+            <Link to="/" className="header-list__link">Конвертер</Link>
           </li>
           <li className="header-list__item">
-            <a href="/currency" className="header-list__link">Валюты</a>
+            <Link to="/currency" className="header-list__link">Валюты</Link>
           </li>
         </ul>
       </Container>
