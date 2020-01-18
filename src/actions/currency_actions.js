@@ -9,3 +9,10 @@ export const getCurrencyList = () => dispatch => {
       });
     });
 };
+
+export const changeCurrentCurrency = (newValue) => (dispatch) => {
+  dispatch({
+    type: 'CHANGE_CURRENT_CURRENCY',
+    payload: newValue,
+  });
+};
