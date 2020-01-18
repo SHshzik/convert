@@ -1,16 +1,17 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
 import Header from './components/Header/Header';
-import Currency from "./components/Currency/Currency";
-import Convert from "./components/Convert/Convert";
+import Currency from './components/Currency/Currency';
+import Convert from './components/Convert/Convert';
 
 function App() {
   return (
     <Router>
       <div>
-        <Header />
+        <Header/>
         <div className="container">
           <Switch>
             <Route path="/currency">
