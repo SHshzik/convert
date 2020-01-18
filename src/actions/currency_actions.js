@@ -1,6 +1,11 @@
-export const simpleAction = () => dispatch => {
-  dispatch({
-    type: 'SIMPLE_ACTION',
-    payload: 'result_of_simple_action',
-  });
+import axios from 'axios';
+
+export const getCurrencyList = () => dispatch => {
+  axios.get('https://www.cbr-xml-daily.ru/daily_json.js')
+    .then(({ data: Valute }) => {
+      dispatch({
+        type: 'ADD_CURRENCY_LIST',
+        payload: Valute,
+      });
+    });
 };

@@ -1,8 +1,17 @@
-export default (state = {}, action) => {
+const initState = {
+  baseState: 'USD',
+  currencies: {},
+};
+
+
+export default (state = initState, action) => {
   switch (action.type) {
-    case 'SIMPLE_ACTION':
+    case 'ADD_CURRENCY_LIST':
       return {
-        result: action.payload,
+        ...state,
+        currencies: {
+          ...action.payload,
+        },
       };
     default:
       return state
