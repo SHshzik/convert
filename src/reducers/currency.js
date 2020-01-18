@@ -1,5 +1,5 @@
 const initState = {
-  baseState: 'USD',
+  baseState: 'RUB',
   currencies: {},
 };
 
